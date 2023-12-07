@@ -8,12 +8,11 @@ function mostrarPostres() {
     .then((data) => {
       data.forEach((element) => {
         let newElement = document.createElement("div");
-        let postreNum = 1;
         newElement.innerHTML = `
             <div class="imagen">
             <img
             src="${element.img}"
-            alt="postre${postreNum}"
+            alt="postre${element.id}"
             />
             <p class="parrafo">${element.name}</p>
             </div>
