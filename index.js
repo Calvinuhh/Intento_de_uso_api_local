@@ -17,7 +17,7 @@ function mostrarPostres() {
             <p class="parrafo">${element.name}</p>
             </div>
             `;
-        div.append(newElement);
+        div.appendChild(newElement);
 
         btn.disabled = true;
       });
