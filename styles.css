@@ -29,7 +29,6 @@ button {
   cursor: pointer;
   text-align: center;
   transition: background-color 0.3s;
-  
 }
 
 button:hover {
@@ -37,17 +36,23 @@ button:hover {
 }
 
 .contenedor {
- display: flex;
- justify-content: space-around;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 img {
   width: 300px;
-  margin: 50px;
+  margin: 90px;
   margin-top: 100px;
   border-radius: 50px;
 }
 
 .parrafo {
   text-align: center;
+}
+
+.footer {
+  margin: 200px;
 }

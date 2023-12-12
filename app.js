@@ -29,6 +29,16 @@ app.get("/postres", (req, res) => {
   res.send(JSON.stringify(postres));
 });
 
+app.post("/postres", (req, res) => {
+  postres.push(req.body);
+
+  res.send("Añadido con exito!");
+});
+
+// app.delete("/postres", (req, res) => {
+
+// });
+
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en el puerto: ${PORT}`);
 });
