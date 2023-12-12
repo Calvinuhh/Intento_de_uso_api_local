@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const PORT = 3000;
-const postres = require("./postres.json");
+let postres = require("./postres.json");
 
 const app = express();
 app.use(cors());
