@@ -29,6 +29,13 @@ app.get("/postres", (req, res) => {
   res.send(JSON.stringify(postres));
 });
 
+app.get("/postres/:id", (req, res) => {
+  const id = req.params.id;
+  const result = postres.filter((postre) => postre.id == id);
+
+  res.send(JSON.stringify(result));
+});
+
 app.post("/postres", (req, res) => {
   postres.push(req.body);
 
