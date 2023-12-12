@@ -18,8 +18,12 @@ app.use(express.text());
 app.use(express.static(path.join(__dirname)));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "index.html"));
+  res.sendFile("./index.html", __dirname);
 });
+
+// app.get("/", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "index.html"));
+// });
 
 app.get("/postres", (req, res) => {
   res.send(JSON.stringify(postres));
