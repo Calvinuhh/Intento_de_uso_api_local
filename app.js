@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const PORT = 3000;
+const postres = require("./postres.json");
 
 const app = express();
 app.use(cors());
@@ -18,6 +19,10 @@ app.use(express.static(path.join(__dirname)));
 
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "index.html"));
+});
+
+app.get("/postres", (req, res) => {
+  res.send(JSON.stringify(postres));
 });
 
 app.listen(PORT, () => {

@@ -1,9 +1,9 @@
 let div = document.querySelector(".contenedor");
-
 let btn = document.querySelector(".boton");
+const url = "http://localhost:3000";
 
 function mostrarPostres() {
-  fetch("./postres.json")
+  fetch(`${url}/postres`)
     .then((response) => response.json())
     .then((data) => {
       data.forEach((element) => {
