@@ -17,8 +17,9 @@ formulario.addEventListener("submit", (event) => {
   fetch(`${url}/postres`, {
     method: "POST",
     headers: {
-      "Content-Type": "application/JSON",
+      "content-type": "application/JSON",
     },
     body: dataJson,
   });
+  alert(`Has agregado "${nombrePostre}" exitosamente`);
 });
