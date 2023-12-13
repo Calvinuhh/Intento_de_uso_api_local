@@ -1,6 +1,6 @@
+const url = "http://localhost:3000";
 let div = document.querySelector(".contenedor");
 let btn = document.querySelector(".boton");
-const url = "http://localhost:3000";
 
 function mostrarPostres() {
   fetch(`${url}/postres`)

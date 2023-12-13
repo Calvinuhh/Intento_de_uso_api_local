@@ -13,6 +13,20 @@ header {
   text-align: center;
 }
 
+#postreHeader {
+  text-align: right;
+  font-size: small;
+  position: relative;
+}
+
+#postresApi {
+  text-align: left;
+  font-size: small;
+  position: relative;
+ top: 130px;
+ right: 100px;
+}
+
 section {
   padding: 20px;
   font-size: 18px;

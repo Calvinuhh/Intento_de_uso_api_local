@@ -5,7 +5,7 @@
 }
 
 {
-  "name" Postre de chocolate,
+  "name": "Postre de chocolate",
   "id": 5,
   "img": "./pics/IMG_3322.PNG"
 }
