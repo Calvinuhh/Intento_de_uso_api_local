@@ -3,6 +3,8 @@ let div = document.querySelector(".contenedor");
 let btn = document.querySelector(".boton");
 
 function mostrarPostres() {
+  div.innerHTML = `<div class="contenedor"></div>`;
+
   fetch(`${url}/postres`)
     .then((response) => response.json())
     .then((data) => {
@@ -18,8 +20,6 @@ function mostrarPostres() {
             </div>
             `;
         div.appendChild(newElement);
-
-        btn.disabled = true;
       });
     });
 }

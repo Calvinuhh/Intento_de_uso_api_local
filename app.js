@@ -43,7 +43,7 @@ app.get("/postres/:id", (req, res) => {
   const id = req.params.id;
   const result = postres.filter((postre) => postre.id == id);
 
-  res.send(JSON.stringify(result));
+  res.send(result);
 });
 
 app.post("/postres", (req, res) => {
