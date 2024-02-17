@@ -3,7 +3,7 @@ let div = document.querySelector(".contenedor");
 let btn = document.querySelector(".boton");
 
 function mostrarPostres() {
-  div.innerHTML = `<div class="contenedor"></div>`;
+  div.innerHTML = "";
 
   fetch(`${url}/postres`)
     .then((response) => response.json())
@@ -23,4 +23,5 @@ function mostrarPostres() {
       });
     });
 }
+
 btn.addEventListener("click", mostrarPostres);

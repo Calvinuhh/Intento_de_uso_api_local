@@ -52,10 +52,10 @@ app.post("/postres", (req, res) => {
   res.send("Añadido con exito!");
 });
 
-app.post("/agregar.html", (req, res) => {
-  postres.push(req.body);
-  res.send("Añadido con exito!");
-});
+// app.post("/agregar.html", (req, res) => {
+//   postres.push(req.body);
+//   res.send("Añadido con exito!");
+// });
 
 // app.delete("/postres", (req, res) => {
 
